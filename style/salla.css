@@ -1,0 +1,224 @@
+.container {
+    display: grid;
+    grid-template-areas:
+        "Nav . Logo"
+
+        "main main main"
+        ". . ."
+
+        "salla salla salla"
+        ". . ."
+
+        "footer footer footer";
+
+    gap: 60px;
+}
+
+.Logo {
+    grid-area: Logo;
+    margin-left: 50px;
+
+}
+
+.bt-submit{
+
+    background-color: rgb(246, 110, 187);
+    ;
+    color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+}
+
+
+
+
+.salla {
+    grid-area: salla;
+    margin-right: 20%;
+    margin-left: 20%;
+    border: 2px solid rgb(246, 110, 187);
+    text-align: center;
+    border-radius: 5%;
+    height: 120%;
+
+}
+
+.Nav {
+    grid-area: Nav;
+    margin: 30px 200px;
+    display: flex;
+    gap: 20px;
+}
+
+.Nav a {
+    background-color: rgb(246, 110, 187);
+    border: 1px solid;
+    border-radius: 25px;
+    width: 80px;
+    height: 20px;
+    color: white;
+    text-align: center;
+    padding: 5px;
+
+}
+
+.main {
+    grid-area: main;
+    margin-top: 5px;
+    display: flex;
+    gap: 100px;
+}
+
+.footer {
+    grid-area: footer;
+    text-align: center;
+    background-color: rgb(246, 110, 187);
+    ;
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    color: green;
+
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-instagram {
+    background: white;
+    color: rgb(246, 110, 187);
+}
+
+.fa-twitter {
+    background: white;
+    color: rgb(246, 110, 187);
+}
+
+.footer p {
+    color: white;
+}
+
+
+
+.crad_product {
+    text-align: center;
+    display: grid;
+    grid-template-areas:
+        '. . remove_product'
+        'product-name-and-img product-name-and-img amount-product'
+        'product-price product-price product-price'
+        'product-total-and-price product-total-and-price product-total-and-price'
+
+        ' product-discount product-discount product-discount'
+        '. . product-done';
+    gap: 0px;
+    align-items: center;
+    align-content: center;
+
+
+    width: 200px;
+    height: 350px;
+    margin-right: 10%;
+    margin-left: 20%;
+
+
+}
+
+.forminput {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+    text-align: center;
+    margin-right: 50px;
+}
+
+.formpayment {
+
+    border: 2px solid rgb(246, 110, 187);
+    position: absolute;
+    top: 103%;
+    left: 20%;
+    background-color: white;
+    opacity: 0.8;
+    height: 50%;
+    z-index: 9;
+    width: 300px;
+    text-align: center;
+
+}
+
+
+
+.remove_product {
+    grid-area: remove_product;
+    position: absolute;
+    top: 93%;
+    left: 22%;
+}
+
+.product-name-and-img {
+    grid-area: product-name-and-img;
+}
+
+.product-discount {
+
+    background-color: rgb(246, 110, 187);
+    grid-area: product-discount;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    margin: 10px 150px;
+    opacity: 0.7;
+    gap: 100px;
+}
+
+.product-price {
+    grid-area: product-price;
+}
+
+.product-done {
+    grid-area: product-done;
+    align-items: center;
+
+}
+
+.amount-product {
+    grid-area: amount-product;
+
+    opacity: 0.5;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+    align-content: center;
+    width: 90px;
+    margin: 20px 20px;
+}
+
+
+.product-total-and-price {
+    background-color: rgb(246, 110, 187);
+    grid-area: product-total-and-price;
+    margin: 20px 170px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-items: center;
+    align-content: center;
+    opacity: 0.7;
+    gap: 100px;
+
+}

@@ -1,0 +1,151 @@
+.container {
+    display: grid;
+    grid-template-areas:
+        "Nav . Logo"
+
+        "main main main"
+        "main main main"
+        ". . ."
+        ". . icons"
+        "Services Services Services"
+        "About About About"
+        "footer footer footer";
+
+    gap: 60px;
+}
+
+.Logo {
+    grid-area: Logo;
+    margin-left: 50px;
+
+}
+
+.icons {
+    grid-area: icons;
+
+    margin-left: 10px;
+}
+
+.icon_salla {
+
+
+    text-align: left;
+
+    margin-bottom: 5%;
+    margin-left: 20%;
+}
+#salla_init {
+    position: absolute;
+    bottom: 2%;
+ left: 7%;
+
+    background-color: red;
+    opacity: 0.8;
+    color: white;
+    border-radius: 40%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    z-index: 1;
+
+}
+.salla_button{
+
+    background-color: rgb(246, 110, 187);
+    ;
+    color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+}
+.Services {
+    grid-area: Services;
+    font-family: 'Tajawal';
+    font-size: 32px;
+    font-weight: 600;
+
+
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+.Nav {
+    grid-area: Nav;
+    margin: 30px 200px;
+    display: flex;
+    gap: 20px;
+}
+
+.Nav a {
+    background-color: rgb(246, 110, 187);
+    border: 1px solid;
+    border-radius: 25px;
+    width: 80px;
+    height: 20px;
+    color: white;
+    text-align: center;
+    padding: 5px;
+
+}
+
+.main {
+    grid-area: main;
+    margin-top: 5px;
+    display: flex;
+    gap: 100px;
+}
+
+.footer {
+    grid-area: footer;
+    text-align: center;
+    background-color: rgb(246, 110, 187);
+    ;
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    color: green;
+
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-instagram {
+    background: white;
+    color: rgb(246, 110, 187);
+}
+
+.fa-twitter {
+    background: white;
+    color: rgb(246, 110, 187);
+}
+
+.footer p {
+    color: white;
+}
+
+.card1 {
+    border: 2px solid black;
+    width: 200px;
+    margin-right: 9%;
+    text-align: center;
+}
+
+.bt-salla {
+    text-align: center;
+    margin-right: 10%;
+
+}
+
